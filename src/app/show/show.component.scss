@@ -1,0 +1,40 @@
+/* Style for the outer container */
+div {
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Style for the heading */
+  h2 {
+    color: #333;
+  }
+  
+  /* Style for the button */
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  /* Add some spacing between elements */
+  div, button {
+    margin-top: 10px;
+  }
+  div {
+    text-align: center; /* Center the text within the div */
+    margin: 20px; /* Add some margin for spacing */
+  }
+  
+  h2 {
+    margin-bottom: 10px; /* Add some margin below the heading for spacing */
+  }
+  
+  button {
+    margin-top: 10px; /* Add some margin above the button for spacing */
+  }
+  

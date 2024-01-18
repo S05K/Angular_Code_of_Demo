@@ -1,0 +1,7 @@
+<h1 class="cc">Select Theatre</h1>
+
+<div *ngFor="let movie of theatres">
+<h1>Name:{{movie.name}}</h1>
+<h1>Location:{{movie.location}}</h1>
+<button (click)="check_shows(movie.id)">Check Shows</button>
+</div>

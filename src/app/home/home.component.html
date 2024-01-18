@@ -1,0 +1,16 @@
+
+<div class="movie-list">
+    <div *ngFor="let movie of movies" class="movie-card"  [style.backgroundImage]="'url(' + movie.image_url + ')'">
+      <img [src]="movie.imageUrl" alt="{{ movie.title }}" class="movie-poster">
+      <div class="movie-details">
+  
+    <h2>Movie:{{ movie.title }}</h2>
+    <p>Description:{{ movie.description }}</p>
+    <p>Genre:{{ movie.genre }}</p>
+    <p>Duration:{{ movie.duration }}</p>
+    <p>Release date:{{ movie.release_date }}</p>
+    <img [src]="movie.image_url" alt="{{ movie.title }} Image">
+    <button class="btn" (click)="book(movie.id)">Book Now</button>
+  </div>
+</div>
+</div>

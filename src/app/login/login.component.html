@@ -1,0 +1,9 @@
+<h1>Login Here!!!</h1>
+    <form #login="ngForm" (ngSubmit)="userLogin(login.value)">
+        <label >Email:</label>
+        <input type="text" name="user_email" ngModel>
+        <label for="">password:</label>
+        <input type="password" name="password" ngModel>
+        <button type="submit">Login</button>
+        <a routerLink="/reset">forgot_password</a>
+    </form>

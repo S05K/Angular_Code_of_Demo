@@ -1,0 +1,32 @@
+<div class="main-area">
+    <div class="content-area">
+      <div class="header">
+        <h1>Movie Booking</h1>
+        <hr>
+      </div>
+      <div class="container">
+        <!--Add product form-->
+        <div class="form-area">
+          <h3>Create User</h3>
+          <form #userForm="ngForm" (ngSubmit)="oncreate(userForm.value)">
+            <label>User Name:</label>
+            <input type="text" name="user_name" ngModel>
+            <br><br>
+            <label>User Email</label>
+            <input type="text" name="user_email" ngModel>
+            <br><br>
+            <label>User Number:</label>
+            <input type="text" name="user_number" ngModel>
+            <br><br>
+            <label>Password:</label>
+            <input type="password" name="password" ngModel>
+            <br><br>
+            <label>Confirm-Password:</label>
+            <input type="password" name="password_confirmation" ngModel>
+            <br><br>
+            <input type="submit" value="{{ 'Add User'}}">
+            <a routerLink="login">Login</a>
+          </form>
+         
+        </div>
+            

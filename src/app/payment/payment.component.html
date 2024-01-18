@@ -1,0 +1,27 @@
+<p>payment works!</p>
+<h1>{{total | json}}</h1>
+<!-- <br><br> -->
+<body>
+    <div class="payment-form">
+        <h2>Payment Details</h2>
+        <form #payment="ngForm" (ngSubmit)="amount(payment.value)">
+            <div class="form-group">
+                <label for="cardNumber">Card Number</label>
+                <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456" required ngModel>
+            </div>
+            <div class="form-group">
+                <label for="expiryDate">Expiry Date</label>
+                <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YYYY" required ngModel>
+            </div>
+            <div class="form-group">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="123" required ngModel>
+            </div>
+            <div class="form-group">
+                <label for="amount">Amount</label>
+                <input type="text" id="amount" name="amount" required ngModel>
+            </div>
+            <button type="submit">Pay Now</button>
+        </form>
+    </div>
+</body>

@@ -1,0 +1,7 @@
+<p>show works!</p>
+<div *ngFor="let i of show">
+<h2>Show Date:{{i.date  | date:'mediumDate'}}</h2>
+<h2>Show Timing:{{i.time | date:'shortTime'}}</h2>
+<h2>Price: {{i.price}}</h2>
+<button (click)="seat(i.id)">Check Seats</button>
+</div>
